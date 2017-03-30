@@ -48,6 +48,8 @@ public class Central {
 		Connection dbConnection = null;
 		Statement statement = null;
 		
+		private security Security;
+		
 		try
 		{
 			connectDB();
