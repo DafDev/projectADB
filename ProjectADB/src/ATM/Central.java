@@ -42,13 +42,16 @@ import javax.swing.JTable;
 
 public class Central {
 
+	private Security security;
+	
+	static Connection conexionBD = null;
+	
 	private int getBalance(String user_id){	
-		int balance; 
+		int balance = 0; 
 		
 		Connection dbConnection = null;
 		Statement statement = null;
 		
-		private security Security;
 		
 		try
 		{
@@ -89,6 +92,12 @@ public class Central {
 	}
 	
 	
+	private void connectDB() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 	private void deposit(String user_id, int amount){	
 		Connection dbConnection = null;
 		Statement statement = null;
